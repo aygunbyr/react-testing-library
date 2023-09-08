@@ -16,10 +16,21 @@ describe('Application', () => {
     });
     expect(sectionHeading).toBeInTheDocument();
 
+    const paragraphElement = screen.getByText(/all fields are mandatory/i);
+    expect(paragraphElement).toBeInTheDocument();
+
     const nameElement = screen.getByRole('textbox', {
       name: 'Name',
     });
     expect(nameElement).toBeInTheDocument();
+
+    const nameElement2 = screen.getByLabelText('Name', {
+      selector: 'input',
+    });
+    expect(nameElement2).toBeInTheDocument();
+
+    const nameElement3 = screen.getByPlaceholderText(/full name/i);
+    expect(nameElement3).toBeInTheDocument();
 
     const bioElement = screen.getByRole('textbox', {
       name: 'Bio',
@@ -31,6 +42,11 @@ describe('Application', () => {
 
     const termsElement = screen.getByRole('checkbox');
     expect(termsElement).toBeInTheDocument();
+
+    const termsElement2 = screen.getByLabelText(
+      'I agree to the terms and conditions'
+    );
+    expect(termsElement2).toBeInTheDocument();
 
     const submitButtonElement = screen.getByRole('button');
     expect(submitButtonElement).toBeInTheDocument();
