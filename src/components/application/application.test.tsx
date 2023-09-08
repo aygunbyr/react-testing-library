@@ -1,4 +1,4 @@
-import { render, screen } from '@testing-library/react';
+import { fireEvent, render, screen } from '@testing-library/react';
 import { Application } from './application';
 
 describe('Application', () => {
@@ -19,6 +19,15 @@ describe('Application', () => {
     const paragraphElement = screen.getByText(/all fields are mandatory/i);
     expect(paragraphElement).toBeInTheDocument();
 
+    const closeElement = screen.getByTitle('close');
+    expect(closeElement).toBeInTheDocument();
+
+    const imageElement = screen.getByAltText(/a person with a laptop/i);
+    expect(imageElement).toBeInTheDocument();
+
+    const customElement = screen.getByTestId('custom-element');
+    expect(customElement).toBeInTheDocument();
+
     const nameElement = screen.getByRole('textbox', {
       name: 'Name',
     });
@@ -31,6 +40,9 @@ describe('Application', () => {
 
     const nameElement3 = screen.getByPlaceholderText(/full name/i);
     expect(nameElement3).toBeInTheDocument();
+
+    const nameElement4 = screen.getByDisplayValue('Vishwas');
+    expect(nameElement4).toBeInTheDocument();
 
     const bioElement = screen.getByRole('textbox', {
       name: 'Bio',
