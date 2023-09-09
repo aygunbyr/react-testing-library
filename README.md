@@ -8,6 +8,8 @@
 
 [Document conformance requirements for use of ARIA attributes in HTML](https://www.w3.org/TR/html-aria/#docconformance)
 
+[Cheatsheet | Testing Library](https://testing-library.com/docs/react-testing-library/cheatsheet/)
+
 ## What to test ?
 
 - Test component renders
@@ -33,3 +35,15 @@
 6. getByAltText (image, area, input)
 7. getByTitle
 8. getByTestId
+
+### queryBy and queryAllBy
+
+### queryBy
+
+- Returns the matching node for a query, and return null if no elements match
+- Useful for asserting an element that is not present
+- Throws an error if more than one match is found
+
+### queryAllBy
+
+- Returns an array of all matching nodes for a query, and return an empty array if no elements match
