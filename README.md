@@ -1,6 +1,10 @@
 # React Testing Tutorial Notes
 
+These notes have been taken while following React Testing Tutorial. I have been just taking notes that I need. It may not be helpful for you.
+
 ## Useful Links
+
+[React Testing Tutorial - YouTube](https://www.youtube.com/playlist?list=PLC3y8-rFHvwirqe1KHFCHJ0RqNuN61SJd)
 
 [Expect - Jest](https://jestjs.io/docs/expect)
 
@@ -90,6 +94,26 @@ user-event allows you to describe a user interaction instead of a concrete event
 
 ### Update the package @testing-library/user-event
 
+userEvent.setup() was introduced in v14.
+
 ```
-npm update @testing-library/user-event
+npm install @testing-library/user-event@latest
 ```
+
+### Pointer Interactions
+
+Convenience APIs (much easier to read and write)
+
+- click()
+- dblClick()
+- tripleClick()
+- hover()
+- unhover()
+
+Pointer APIs
+
+pointer({keys: '[MouseLeft]'})
+pointer({keys: '[MouseLeft][Mouseright]'})
+pointer('[MouseLeft][Mouseright]')
+pointer('[MouseLeft>]') (without releasing button)
+pointer('[/MouseLeft]') (releasing previously pressed button)
