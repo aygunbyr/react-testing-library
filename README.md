@@ -10,6 +10,8 @@
 
 [Cheatsheet | Testing Library](https://testing-library.com/docs/react-testing-library/cheatsheet/)
 
+[Testing Playground Chrome Extension](https://chrome.google.com/webstore/detail/testing-playground/hejbmebodbijjdhflfknehhcgaklhano)
+
 ## What to test ?
 
 - Test component renders
