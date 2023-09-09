@@ -112,8 +112,8 @@ Convenience APIs (much easier to read and write)
 
 Pointer APIs
 
-pointer({keys: '[MouseLeft]'})
-pointer({keys: '[MouseLeft][Mouseright]'})
-pointer('[MouseLeft][Mouseright]')
-pointer('[MouseLeft>]') (without releasing button)
-pointer('[/MouseLeft]') (releasing previously pressed button)
+- pointer({keys: '[MouseLeft]'})
+- pointer({keys: '[MouseLeft][Mouseright]'})
+- pointer('[MouseLeft][Mouseright]')
+- pointer('[MouseLeft>]') (without releasing button)
+- pointer('[/MouseLeft]') (releasing previously pressed button)
