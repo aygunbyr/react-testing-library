@@ -36,7 +36,7 @@
 7. getByTitle
 8. getByTestId
 
-### queryBy and queryAllBy
+## queryBy and queryAllBy
 
 ### queryBy
 
@@ -47,3 +47,15 @@
 ### queryAllBy
 
 - Returns an array of all matching nodes for a query, and return an empty array if no elements match
+
+## findBy and findAllBy
+
+### findBy
+
+- Returns a Promise which resolves when an element is found which matches the given query
+- The promise is rejected if no element is found or if more than one element is found after a default timeout of 1000ms
+
+### findAllBy
+
+- Returns a promise which resolves to an array of elements when any elements are found which match the given query
+- The promise is rejected if no elements are found after a default timeout of 1000ms
