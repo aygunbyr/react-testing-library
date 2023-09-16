@@ -207,3 +207,26 @@ test('upload file', async () => {
 
 - keyboard('foo') // translates to: f, o, o
 - keyboard('{Shift>}A{/Shift}') // translates to: Shift(down), A, Shift(up)
+
+## Static analysis testing
+
+Process of verifying that your code meets certain expectations without actually running it
+
+- Ensure consistent style and formatting
+- Check for common mistakes and possible bugs
+- Limit the complexity of code and
+- Verify type consistency
+
+All types of tests run the code and then compare the outcome against known expected outputs to see if everything works OK
+
+Static testing analyses aspects such as readability, consistency, error handling, type checking and alignment with best practises
+
+Testing checks if your code works or not, whereas static analysis checks if it is written well or not
+
+### Static analysis testing tools
+
+- TypeScript
+- ESlint
+- Prettier
+- Husky
+- lint-staged
