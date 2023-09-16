@@ -16,6 +16,8 @@ These notes have been taken while following React Testing Tutorial. I have been 
 
 [Testing Playground Chrome Extension](https://chrome.google.com/webstore/detail/testing-playground/hejbmebodbijjdhflfknehhcgaklhano)
 
+[Custom Render](https://testing-library.com/docs/react-testing-library/setup#custom-render)
+
 ## What to test ?
 
 - Test component renders
