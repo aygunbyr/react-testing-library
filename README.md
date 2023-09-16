@@ -18,6 +18,12 @@ These notes have been taken while following React Testing Tutorial. I have been 
 
 [Custom Render](https://testing-library.com/docs/react-testing-library/setup#custom-render)
 
+[MSW – Seamless API mocking library for browser and Node | Mock Service Worker](https://mswjs.io/)
+
+[Install - Getting Started - Mock Service Worker Docs](https://mswjs.io/docs/getting-started/install)
+
+[Node - Getting Started - Mock Service Worker Docs](https://mswjs.io/docs/getting-started/integrate/node)
+
 ## What to test ?
 
 - Test component renders
