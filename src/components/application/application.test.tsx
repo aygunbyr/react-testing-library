@@ -1,4 +1,4 @@
-import { fireEvent, render, screen } from '@testing-library/react';
+import { render, screen } from '@testing-library/react';
 import { Application } from './application';
 
 describe('Application', () => {
@@ -62,5 +62,7 @@ describe('Application', () => {
 
     const submitButtonElement = screen.getByRole('button');
     expect(submitButtonElement).toBeInTheDocument();
+
+    expect(submitButtonElement).toBeDisabled();
   });
 });
