@@ -266,3 +266,9 @@ Installation
 ```
 npm install --save-dev lint-staged # requires further setup
 ```
+
+Run tests before each push, it creates pre-push file:
+
+```
+npx husky add .husky/pre-push "npm test -- --watchAll=false"
+```
