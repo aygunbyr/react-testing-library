@@ -246,3 +246,13 @@ Installation
 ```
 npm install --save-dev eslint-config-prettier
 ```
+
+## Husky
+
+Husky is a tool that helps improve your commits and more
+
+### husky-init
+
+```
+npx husky-init && npm install
+```
