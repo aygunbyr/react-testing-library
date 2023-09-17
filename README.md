@@ -151,7 +151,7 @@ test('selectOptions', async () => {
       <option value="1">A</option>
       <option value="2">B</option>
       <option value="3">C</option>
-    </select>
+    </select>,
   );
   await userEvent.selectOptions(screen.getByRole('listbox'), ['1', 'C']);
   expect(screen.getByRole('option', { name: 'A' }).selected).toBe(true);
@@ -171,7 +171,7 @@ test('deselectOptions', async () => {
         B
       </option>
       <option value="3">C</option>
-    </select>
+    </select>,
   );
   await userEvent.deselectOptions(screen.getByRole('listbox'), '2');
   expect(screen.getByText('B').selected).toBe(false);
@@ -186,7 +186,7 @@ test('upload file', async () => {
     <div>
       <label htmlFor="file-uploader">Upload file:</label>
       <input id="file-uploader" type="file" />
-    </div>
+    </div>,
   );
   const file = new File(['hello'], 'hello.png', { type: 'image/png}' });
   const input = screen.getByLabelText(/upload file/i);
@@ -230,3 +230,19 @@ Testing checks if your code works or not, whereas static analysis checks if it i
 - Prettier
 - Husky
 - lint-staged
+
+## Prettier
+
+Prettier is a opinionated code formatter that ensures that all outputted code conforms to a consistent style
+
+```
+npm install --save-dev --save-exact prettier
+```
+
+### eslint-config-prettier
+
+Installation
+
+```
+npm install --save-dev eslint-config-prettier
+```
