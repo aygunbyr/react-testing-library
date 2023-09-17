@@ -256,3 +256,13 @@ Husky is a tool that helps improve your commits and more
 ```
 npx husky-init && npm install
 ```
+
+## lint-staged
+
+Run linters (and formatters) against staged git files
+
+Installation
+
+```
+npm install --save-dev lint-staged # requires further setup
+```
